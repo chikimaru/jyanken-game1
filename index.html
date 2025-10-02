@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>じゃんけん対決！</h1>
+
+    <div class="game-area">
+      <!-- プレイヤー（男） -->
+      <div class="player" id="player">
+        <div class="character male">
+          <div class="character-icon">👨</div>
+          <h2>あなた</h2>
+          <div class="hand-display" id="player-hand">？</div>
+        </div>
+      </div>
+
+      <!-- VS表示 -->
+      <div class="vs">
+        <h2>VS</h2>
+      </div>
+
+      <!-- コンピュータ（女） -->
+      <div class="player" id="computer">
+        <div class="character female">
+          <div class="character-icon">👩</div>
+          <h2>コンピュータ</h2>
+          <div class="hand-display" id="computer-hand">？</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結果表示 -->
+    <div class="result" id="result"></div>
+
+    <!-- ボタン -->
+    <div class="buttons">
+      <button class="hand-btn" data-hand="rock">✊ グー</button>
+      <button class="hand-btn" data-hand="scissors">✌️ チョキ</button>
+      <button class="hand-btn" data-hand="paper">🖐️ パー</button>
+    </div>
+
+    <!-- リセットボタン -->
+    <button class="reset-btn" id="reset-btn" style="display: none;">もう一回</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
